@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { Link } from 'react-scroll'
 import {AiFillGithub,AiFillLinkedin,AiFillInstagram} from 'react-icons/ai'
+import {RiCloseLine,RiMenu4Line} from 'react-icons/ri'
 const logo = require("../../images/logo.png")
 
 
@@ -9,7 +10,7 @@ const Menu = ()=>(
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300 ">
     <Link className="cursor-pointer" to="Projects" smooth={true} duration={500}>Projects</Link></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="WhatsBrain" smooth={true} duration={500}>Technologies</Link></p>
+    <Link className="cursor-pointer" to="technologies" smooth={true} duration={500}>Technologies</Link></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
     <Link className="cursor-pointer" to="possibilities" smooth={true} duration={500}>About</Link></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
@@ -19,8 +20,16 @@ const Menu = ()=>(
   </>
 )
 
-const Navbar = () => {
+const MenuSocialMedia = ()=>(
+  <>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillGithub/></a>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillLinkedin/></a>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillInstagram/></a>
+  </>
+)
 
+const Navbar = () => {
+  const [toggleMenu,setToggleMenu] = useState(false);
   const [navbar,setNavbar]=useState(false);  
   const changeBackground=()=>{
     if(window.scrollY>=80){
@@ -49,9 +58,23 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex-1 hidden sm:flex justify-end items-center">
-            <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillGithub/></a>
-            <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillLinkedin/></a>
-            <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillInstagram/></a>
+            <MenuSocialMedia />
+          </div>
+          <div className='flex lg:hidden ml-4 relative'>
+              {toggleMenu ?
+              <RiCloseLine style={{cursor:'pointer'}} color="#fff" size={27} onClick={()=>{setToggleMenu(false)}}/>
+            : <RiMenu4Line style={{cursor:'pointer'}} color="#fff" size={27} onClick={()=>{setToggleMenu(true)}}/>}
+            {toggleMenu && (
+              <div className="flex z-30 justify-end items-end flex-col bg-[#040311] text-left p-8 absolute
+              top-8 right-0 mt-4 min-w-[210px] rounded shadow-md shadow-blue-600">
+                <div>
+                  <Menu />
+                </div>
+                <div className="flex sm:hidden justify-start items-start mt-4">
+                  <MenuSocialMedia />
+                </div>
+              </div>
+            )}
           </div>
         </div>;
 };
