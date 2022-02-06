@@ -22,9 +22,9 @@ const Menu = ()=>(
 
 const MenuSocialMedia = ()=>(
   <>
-    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillGithub/></a>
-    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillLinkedin/></a>
-    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillInstagram/></a>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillGithub style = {{fontSize: "2rem"}}/></a>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillLinkedin style = {{fontSize: "2rem"}}/></a>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillInstagram style = {{fontSize: "2rem"}}/></a>
   </>
 )
 
@@ -67,12 +67,10 @@ const Navbar = () => {
             {toggleMenu && (
               <div className="flex z-30 justify-end items-end flex-col bg-[#040311] text-left p-8 absolute
               top-8 right-0 mt-4 min-w-[210px] rounded shadow-md shadow-blue-600">
-                <div>
                   <Menu />
-                </div>
-                <div className="flex sm:hidden justify-start items-start mt-4">
-                  <MenuSocialMedia />
-                </div>
+                  <div className="flex sm:hidden items-left mx-4 my-4">
+                    <MenuSocialMedia />
+                  </div>
               </div>
             )}
           </div>
