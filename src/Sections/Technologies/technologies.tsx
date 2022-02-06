@@ -2,7 +2,7 @@ import React from 'react';
 import { FaReact,FaFigma,FaNodeJs } from "react-icons/fa";
 import { BsServer } from "react-icons/bs";
 import { DiHtml5,DiCss3,DiJavascript1 } from "react-icons/di";
-import { SiTailwindcss,SiExpress,SiMongodb } from "react-icons/si"
+import { SiTailwindcss,SiExpress,SiMongodb,SiRedux } from "react-icons/si"
 
 const technologies = () => {
   return <div className='flex flex-col px-5 sm:px-20 py-20' id='technologies'>
@@ -20,19 +20,28 @@ const technologies = () => {
                     <p>Experienced with:</p>
                     <div className='flex flex-col '>
                         <div className='flex justify-start items-center'>
-                            <FaReact style = {{fontSize: "1rem",marginRight:"10px"}}/><span>React</span>
+                            <FaReact style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>React</span>
                         </div>
                         <div className='flex justify-start items-center'>
-                            <SiTailwindcss style = {{fontSize: "1rem",marginRight:"10px"}}/><span>Tailwind Css</span>
+                            <SiTailwindcss style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Tailwind Css</span>
                         </div>
                         <div className='flex justify-start items-center'>
-                            <DiJavascript1 style = {{fontSize: "1rem",marginRight:"10px"}}/><span>Javascript</span>
+                            <DiJavascript1 style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Javascript</span>
                         </div>
                         <div className='flex justify-start items-center'>
-                            <DiHtml5 style = {{fontSize: "1rem",marginRight:"10px"}}/><span>Html</span>
+                            <SiRedux style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Redux</span>
                         </div>
                         <div className='flex justify-start items-center'>
-                            <DiCss3 style = {{fontSize: "1rem",marginRight:"10px"}}/><span>Css</span>
+                            <DiHtml5 style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Html</span>
+                        </div>
+                        <div className='flex justify-start items-center'>
+                            <DiCss3 style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Css</span>
                         </div>
                     </div>
                 </div>
@@ -42,13 +51,16 @@ const technologies = () => {
                     <p>Experienced with:</p>
                     <div className='flex flex-col'>
                         <div className='flex justify-start items-center'>
-                            <FaNodeJs style = {{fontSize: "1rem",marginRight:"10px"}}/><span>Node</span>
+                            <FaNodeJs style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Node</span>
                         </div>
                         <div className='flex justify-start items-center'>
-                            <SiExpress style = {{fontSize: "1rem",marginRight:"10px"}}/><span>Express</span>
+                            <SiExpress style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Express</span>
                         </div>
                         <div className='flex justify-start items-center'>
-                            <SiMongodb style = {{fontSize: "1rem",marginRight:"10px"}}/><span>Mongo DB</span>
+                            <SiMongodb style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Mongo DB</span>
                         </div>
                     </div>
                 </div>
@@ -58,7 +70,8 @@ const technologies = () => {
                     <p>Experienced with:</p>
                     <div className='flex flex-col'>
                         <div className='flex justify-start items-center'>
-                            <FaFigma style = {{fontSize: "1rem",marginRight:"10px"}}/><span>Figma</span>
+                            <FaFigma style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Figma</span>
                         </div>
                     </div>
                 </div>

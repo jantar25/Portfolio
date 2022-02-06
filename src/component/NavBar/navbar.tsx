@@ -12,19 +12,20 @@ const Menu = ()=>(
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
     <Link className="cursor-pointer" to="technologies" smooth={true} duration={500}>Technologies</Link></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="possibilities" smooth={true} duration={500}>About</Link></p>
+    <Link className="cursor-pointer" to="about" smooth={true} duration={500}>About</Link></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
     <Link className="cursor-pointer" to="features" smooth={true} duration={500}>Blog</Link></p>
-    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="blog" smooth={true} duration={500}>Library</Link></p>
   </>
 )
 
 const MenuSocialMedia = ()=>(
   <>
-    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillGithub style = {{fontSize: "2rem"}}/></a>
-    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillLinkedin style = {{fontSize: "2rem"}}/></a>
-    <a className='mr-2 hover:translate-y-1 duration-200' href='http://Github.com'><AiFillInstagram style = {{fontSize: "2rem"}}/></a>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='https://github.com/jantar25'>
+      <AiFillGithub style = {{fontSize: "2rem"}}/></a>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='https://www.linkedin.com/in/bulambo-mwendelwa-gloire-5a0755191/'>
+      <AiFillLinkedin style = {{fontSize: "2rem"}}/></a>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='https://www.instagram.com/glody___jantar/'>
+      <AiFillInstagram style = {{fontSize: "2rem"}}/></a>
   </>
 )
 
