@@ -1,5 +1,5 @@
 const kivugreen = require("../../images/kivugreen.PNG")
-const brainstorm = require("../../images/kivugreen.PNG")
+const brainstorm = require("../../images/Brainstorm.PNG")
 const ourmemo = require("../../images/memo.PNG")
 
 

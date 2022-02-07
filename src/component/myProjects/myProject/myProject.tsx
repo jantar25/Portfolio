@@ -6,7 +6,7 @@ const myProject = ({Project}:{Project:any}) => {
     const tags = Project.technologies
 
   return <div>
-            <div className='max-w-[400px] sm:max-w-[320px] shadow shadow-gray-600 rounded my-8 md:mx-4 bg-[#f2f3f4] 
+            <div className='max-w-[400px] sm:max-w-[320px] shadow shadow-gray-600 rounded my-8 md:mx-4 bg-[#E1D9D1] 
             hover:border-b-8 hover:border-blue-600 duration-200'>
                 <img src={Project.img}
                   alt="projectImg" className="block w-full" />

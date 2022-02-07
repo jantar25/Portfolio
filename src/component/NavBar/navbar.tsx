@@ -14,7 +14,9 @@ const Menu = ()=>(
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
     <Link className="cursor-pointer" to="about" smooth={true} duration={500}>About</Link></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="features" smooth={true} duration={500}>Blog</Link></p>
+    <Link className="cursor-pointer" to="contact" smooth={true} duration={500}>Contact</Link></p>
+    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
+    <Link className="cursor-pointer" to="blog" smooth={true} duration={500}>Blog</Link></p>
   </>
 )
 
