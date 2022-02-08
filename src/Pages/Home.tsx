@@ -5,6 +5,7 @@ import Projects from '../Sections/Projects/Projects';
 import Technologies from '../Sections/Technologies/technologies';
 import About from '../Sections/About/about';
 import Contacts from '../Sections/Contacts/contacts';
+import Footer from '../Sections/Footer/footer';
 
 const Home = () => {
   return <div>
@@ -14,6 +15,7 @@ const Home = () => {
             <Technologies />
             <About />
             <Contacts />
+            <Footer />
         </div>;
 };
 

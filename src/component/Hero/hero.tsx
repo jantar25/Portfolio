@@ -5,7 +5,7 @@ const me = require("../../images/me.png")
 
 
 const hero = () => {
-  return <div className='flex flex-col lg:h-screen lg:flex-row px-5 sm:px-20 pt-8 lg:pt-2' id='Home'>
+  return <div className='flex flex-col lg:h-screen lg:flex-row px-5 sm:px-20 pt-16 lg:pt-2' >
           <div className='flex-1 flex justify-center items-start flex-col mb-24'>
               <h3 className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 font-Manrope
               text-xl'>Welcom!</h3>
@@ -25,9 +25,9 @@ const hero = () => {
                     font-bold text-white text-lg' type='button'>Learn more</button>
                   </Link>
           </div>
-          <div className='flex-1 relative flex justify-center items-center'>
-              <img className='z-10 w-full md:max-w-lg lg:h-full object-contain' src={me} alt="ai" />
-              <div className='w-full absolute top-0 right-0'>
+          <div className='flex-1 w-full h-full relative flex justify-center items-center hover-img'>
+              <img className='z-10 w-full h-full md:max-w-lg lg:h-full object-contain' src={me} alt="ai" />
+              <div className='w-full md:w-3/4 lg:w-full absolute top-0 right-auto left-auto'>
                 <BackgroundAnimation/>
               </div>
           </div>
