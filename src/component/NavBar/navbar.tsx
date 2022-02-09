@@ -46,7 +46,7 @@ const Navbar = () => {
   window.addEventListener('scroll',changeBackground)
 
   useEffect(()=>{  
-    let handeler = (event :any) => {if(!menuRef?.current?.contains(event.target)){setToggleMenu(false)}} 
+    let handeler = (event:any) => {if(!menuRef?.current?.contains(event.target)){setToggleMenu(false)}} 
     document.addEventListener('mousedown',handeler)
     return ()=> document.removeEventListener('mousedown',handeler)
   },[])
@@ -54,9 +54,9 @@ const Navbar = () => {
 
 
   return <div className={`flex h-[80px] justify-between items-center ${navbar? 'bg-[#000]' : 'bg-transparent'}
-  z-20 px-5 sm:px-20 py-2 sticky top-0 `} id='Home'>
+  z-20 px-5 sm:px-20 py-2 sticky top-0 `}>
           <div className="flex-1 flex justify-start items-center">
-            <Link className="cursor-pointer" to="#" smooth={true} duration={500}>
+            <Link className="cursor-pointer" to="Home" smooth={true} duration={500}>
               <div className="flex items-center mr-8">
                 <div className="mr-1 w-10">
                   <img className='min-w-full' src={logo} alt="test" />
