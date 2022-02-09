@@ -46,9 +46,9 @@ const Navbar = () => {
   window.addEventListener('scroll',changeBackground)
 
   useEffect(()=>{  
-    let handeler = (event:any) => {if(!menuRef?.current?.contains(event.target)){setToggleMenu(false)}} 
-    document.addEventListener('mousedown',handeler)
-    return ()=> document.removeEventListener('mousedown',handeler)
+    let handeler = (event:any) => {if(!menuRef?.current?.contains (event.target)){setToggleMenu(false)}} 
+    document.addEventListener('mousedown',handeler,{ capture: true })
+    return ()=> document.removeEventListener('mousedown',handeler,{ capture: true })
   },[])
   
 
