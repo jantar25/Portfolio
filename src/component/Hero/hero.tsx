@@ -19,8 +19,8 @@ const Hero = () => {
               <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500 font-Manrope text-2xl
                md:text-4xl font-black pt-4 animate-pulse'>Full-Stack Web Developper</h1>
               <p className='font-Manrope text-lg text-text my-6'>
-                  With extensive experience for over 1 year,my expertize 
-                  is to create and design websites and many more...</p>
+                  With extensive experience for over 2 years in frontend,
+                  I am passionate about developing user-friendly interfaces.</p>
                   <Link className="cursor-pointer" to="about" smooth={true} duration={500}>
                     <button className='bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 px-4 py-1 rounded font-Manrope 
                     font-bold text-white text-lg' type='button'>Learn more</button>

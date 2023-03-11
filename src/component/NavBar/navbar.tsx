@@ -1,22 +1,21 @@
 import React,{useState,useEffect, useRef} from 'react';
 import { Link } from 'react-scroll'
-import {AiFillGithub,AiFillLinkedin,AiFillInstagram} from 'react-icons/ai'
+import {AiFillGithub,AiFillLinkedin} from 'react-icons/ai'
 import {RiCloseLine,RiMenu4Line} from 'react-icons/ri'
-const logo = require("../../images/logo.png")
 
 
 const Menu = ({menu}:any)=>(
   <>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
+    <Link className="cursor-pointer" to="about" smooth={true} duration={500} onClick={menu}>About</Link></p>
+    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
     <Link className="cursor-pointer" to="Projects" smooth={true} duration={500} onClick={menu}>Projects</Link></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
     <Link className="cursor-pointer" to="technologies" smooth={true} duration={500} onClick={menu}>Technologies</Link></p>
-    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="about" smooth={true} duration={500} onClick={menu}>About</Link></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" >
     <Link className="cursor-pointer" to="contact" smooth={true} duration={500} onClick={menu}>Contact</Link></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="blog" smooth={true} duration={500} onClick={menu}>Blog</Link></p>
+    <Link className="cursor-pointer" to="/blog" smooth={true} duration={500} onClick={menu}>Blog</Link></p>
   </>
 )
 
@@ -26,8 +25,6 @@ const MenuSocialMedia = ()=>(
       <AiFillGithub style = {{fontSize: "2rem"}}/></a>
     <a className='mr-2 hover:translate-y-1 duration-200' href='https://www.linkedin.com/in/bulambo-mwendelwa-gloire-5a0755191/'>
       <AiFillLinkedin style = {{fontSize: "2rem"}}/></a>
-    <a className='mr-2 hover:translate-y-1 duration-200' href='https://www.instagram.com/glody___jantar/'>
-      <AiFillInstagram style = {{fontSize: "2rem"}}/></a>
   </>
 )
 
@@ -58,10 +55,7 @@ const Navbar = () => {
           <div className="flex-1 flex justify-start items-center">
             <Link className="cursor-pointer" to="Home" smooth={true} duration={500}>
               <div className="flex items-center mr-8">
-                <div className="mr-1 w-10">
-                  <img className='min-w-full' src={logo} alt="test" />
-                </div>
-                <h1 className="hidden sm:flex text-3xl font-Manrope text-transparent bg-clip-text 
+                <h1 className="flex text-3xl font-Manrope text-transparent bg-clip-text 
                 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-300">BMG</h1>
               </div>
             </Link>

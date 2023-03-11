@@ -9,8 +9,11 @@ const about = () => {
             </div>
             <div className='flex flex-col md:flex-row'>
                 <div className='flex-1'>
-                    <p>I am mostly a front-end developper with some back-end side skills,
-                    I have a degree in computer science and I am extremely interested in programming.
+                    <p>Committed computer Science graduate with extensive experience for over 2 Years
+                     in frontend development and additional server side skills. Self-motivated and 
+                     enthusiastic team player dedicated to efficiently resolving project issues with 
+                     attention to details and passionate about developing user-friendly interfaces 
+                     while gaining skilled..
                     </p>
                 </div>
                 <div className='flex-1'>
