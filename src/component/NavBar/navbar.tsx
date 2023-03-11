@@ -1,21 +1,22 @@
 import React,{useState,useEffect, useRef} from 'react';
-import { Link } from 'react-scroll'
+import { Link } from "react-router-dom";
+import { HashLink  } from 'react-router-hash-link';
 import {AiFillGithub,AiFillLinkedin} from 'react-icons/ai'
 import {RiCloseLine,RiMenu4Line} from 'react-icons/ri'
 
 
 const Menu = ({menu}:any)=>(
   <>
-    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="about" smooth={true} duration={500} onClick={menu}>About</Link></p>
-    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="Projects" smooth={true} duration={500} onClick={menu}>Projects</Link></p>
-    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="technologies" smooth={true} duration={500} onClick={menu}>Technologies</Link></p>
-    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" >
-    <Link className="cursor-pointer" to="contact" smooth={true} duration={500} onClick={menu}>Contact</Link></p>
-    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300">
-    <Link className="cursor-pointer" to="/blog" smooth={true} duration={500} onClick={menu}>Blog</Link></p>
+    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" onClick={menu}>
+    <HashLink smooth to="/#about">About</HashLink></p>
+    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" onClick={menu}>
+    <HashLink smooth to="/#projects">Projects</HashLink></p>
+    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" onClick={menu}>
+    <HashLink smooth to="/#technologies">Technologies</HashLink></p>
+    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" onClick={menu}>
+    <HashLink smooth to="/#contact">Contact</HashLink></p>
+    <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" onClick={menu}>
+    <HashLink to="/blogs#top">Blog</HashLink></p>
   </>
 )
 
@@ -53,12 +54,12 @@ const Navbar = () => {
   return <div className={`flex h-[80px] justify-between items-center ${navbar? 'bg-[#000]' : 'bg-transparent'}
   z-20 px-5 sm:px-20 py-2 sticky top-0 `}>
           <div className="flex-1 flex justify-start items-center">
-            <Link className="cursor-pointer" to="Home" smooth={true} duration={500}>
+            <HashLink to="/#top">
               <div className="flex items-center mr-8">
                 <h1 className="flex text-3xl font-Manrope text-transparent bg-clip-text 
-                bg-gradient-to-r from-blue-400 via-blue-500 to-blue-300">BMG</h1>
+                  bg-gradient-to-r from-blue-400 via-blue-500 to-blue-300">BMG</h1>
               </div>
-            </Link>
+            </HashLink>
             <div className="hidden lg:flex">
               <Menu menu={menu}/>
             </div>
