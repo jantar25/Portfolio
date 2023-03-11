@@ -10,7 +10,7 @@ export const ProjectData =[
         title:"Rental",
         cat:"Real Estate App",
         description:"An application that links landlord and house seeker by allowing the first to advertize properties and second to rent online",
-        technologies:['typescipt','react','node.js','express','redux','taiwind Css'],
+        technologies:['typescipt','react','node.js','express','redux','taiwind Css','i18next','mapbox-gl'],
         linkWeb:'https://kigalirental.vercel.app/',
         linkGithub:'https://github.com/jantar25/Rental',
     },

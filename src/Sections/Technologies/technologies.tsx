@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaReact,FaFigma,FaNodeJs } from "react-icons/fa";
 import { BsServer } from "react-icons/bs";
-import { DiHtml5,DiCss3,DiJavascript1 } from "react-icons/di";
-import { SiTailwindcss,SiExpress,SiMongodb,SiRedux } from "react-icons/si"
+import { DiHtml5,DiCss3,DiJavascript1,DiFirebase } from "react-icons/di";
+import { SiTailwindcss,SiExpress,SiMongodb,SiRedux,SiGraphql,SiTypescript } from "react-icons/si"
 
 const technologies = () => {
   return <div className='flex flex-col px-5 sm:px-20 py-16' id='technologies'>
@@ -24,16 +24,20 @@ const technologies = () => {
                             <span className='text-[1.3rem]'>React</span>
                         </div>
                         <div className='flex justify-start items-center'>
-                            <SiTailwindcss style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
-                            <span className='text-[1.3rem]'>Tailwind Css</span>
-                        </div>
-                        <div className='flex justify-start items-center'>
                             <DiJavascript1 style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
                             <span className='text-[1.3rem]'>Javascript</span>
                         </div>
                         <div className='flex justify-start items-center'>
+                            <SiTypescript style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Typescript</span>
+                        </div>
+                        <div className='flex justify-start items-center'>
                             <SiRedux style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
                             <span className='text-[1.3rem]'>Redux</span>
+                        </div>
+                        <div className='flex justify-start items-center'>
+                            <SiTailwindcss style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Tailwind Css</span>
                         </div>
                         <div className='flex justify-start items-center'>
                             <DiHtml5 style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
@@ -59,8 +63,16 @@ const technologies = () => {
                             <span className='text-[1.3rem]'>Express</span>
                         </div>
                         <div className='flex justify-start items-center'>
+                            <SiGraphql style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>GraphQL</span>
+                        </div>
+                        <div className='flex justify-start items-center'>
                             <SiMongodb style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
                             <span className='text-[1.3rem]'>Mongo DB</span>
+                        </div>
+                        <div className='flex justify-start items-center'>
+                            <DiFirebase style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Firebase</span>
                         </div>
                     </div>
                 </div>

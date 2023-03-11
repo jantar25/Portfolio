@@ -17,13 +17,17 @@ const myProject = ({Project}:{Project:any}) => {
                 </div>
                 <div className="px-4 py-2">
                     {tags.map((tag:any,index:number)=>(
-                        <span key={index} className="inline-block bg-gray-400 rounded-full px-2 text-[12px]
+                        <span key={index} className="inline-block bg-gray-300 rounded-full px-2 text-[12px]
                         font-semibold text-teal-700 mr-2">#{tag}</span>
                     ))}
                 </div>
                 <div className='flex justify-between items-center p-4'>
-                    <a href={Project.linkGithub} className="text-white rounded px-2 py-1 bg-black text-[10px] font-[500]">Github</a> 
-                    <a href={Project.linkWeb} className="text-white rounded px-2 py-1 bg-gray-700 text-[10px] font-[500]">Web View</a> 
+                    <a target='_blank' rel="noreferrer" 
+                    href={Project.linkGithub} 
+                    className="text-white rounded px-2 py-1 bg-black text-[10px] font-[500]">Github</a> 
+                    <a target='_blank' rel="noreferrer" 
+                    href={Project.linkWeb} 
+                    className="text-white rounded px-2 py-1 bg-gray-700 text-[10px] font-[500]">Web View</a> 
                 </div>
             </div>
         </div>
