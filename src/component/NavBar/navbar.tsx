@@ -1,5 +1,4 @@
 import React,{useState,useEffect, useRef} from 'react';
-import { Link } from "react-router-dom";
 import { HashLink  } from 'react-router-hash-link';
 import {AiFillGithub,AiFillLinkedin} from 'react-icons/ai'
 import {RiCloseLine,RiMenu4Line} from 'react-icons/ri'
@@ -24,7 +23,7 @@ const MenuSocialMedia = ()=>(
   <>
     <a className='mr-2 hover:translate-y-1 duration-200' href='https://github.com/jantar25'>
       <AiFillGithub style = {{fontSize: "2rem"}}/></a>
-    <a className='mr-2 hover:translate-y-1 duration-200' href='https://www.linkedin.com/in/bulambo-mwendelwa-gloire-5a0755191/'>
+    <a className='mr-2 hover:translate-y-1 duration-200' href='https://www.linkedin.com/in/bulambo-mwendelwa-gloire/'>
       <AiFillLinkedin style = {{fontSize: "2rem"}}/></a>
   </>
 )

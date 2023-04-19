@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaReact,FaFigma,FaNodeJs } from "react-icons/fa";
+import { FaReact,FaFigma,FaNodeJs,FaPhp } from "react-icons/fa";
 import { BsServer } from "react-icons/bs";
 import { DiHtml5,DiCss3,DiJavascript1,DiFirebase } from "react-icons/di";
-import { SiTailwindcss,SiExpress,SiMongodb,SiRedux,SiGraphql,SiTypescript } from "react-icons/si"
+import { SiTailwindcss,SiExpress,SiMongodb,SiRedux,SiGraphql,SiTypescript,SiMysql } from "react-icons/si"
 
 const technologies = () => {
   return <div className='flex flex-col px-5 sm:px-20 py-16' id='technologies'>
@@ -22,6 +22,10 @@ const technologies = () => {
                         <div className='flex justify-start items-center'>
                             <FaReact style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
                             <span className='text-[1.3rem]'>React</span>
+                        </div>
+                        <div className='flex justify-start items-center'>
+                            <FaReact style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>React-Native</span>
                         </div>
                         <div className='flex justify-start items-center'>
                             <DiJavascript1 style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
@@ -67,12 +71,20 @@ const technologies = () => {
                             <span className='text-[1.3rem]'>GraphQL</span>
                         </div>
                         <div className='flex justify-start items-center'>
+                            <FaPhp style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>Php</span>
+                        </div>
+                        <div className='flex justify-start items-center'>
                             <SiMongodb style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
                             <span className='text-[1.3rem]'>Mongo DB</span>
                         </div>
                         <div className='flex justify-start items-center'>
                             <DiFirebase style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
                             <span className='text-[1.3rem]'>Firebase</span>
+                        </div>
+                        <div className='flex justify-start items-center'>
+                            <SiMysql style = {{fontSize: "1.3rem",marginRight:"10px"}}/>
+                            <span className='text-[1.3rem]'>MySQL</span>
                         </div>
                     </div>
                 </div>

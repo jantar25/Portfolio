@@ -73,7 +73,7 @@ const Contacts = () => {
                         </div>
                         <input placeholder='Subject' type='text' name='subject' className='rounded mb-4 px-4 py-2'/>
                         <textarea placeholder='Message' name='message' rows={4} className='rounded mb-4 px-4 py-2'/>
-                        <button type='submit' className='flex justify-center items-center bg-red-600 rounded px-4 py-2 px-1 w-1/3 font-[500]'>
+                        <button type='submit' className='flex justify-center items-center bg-blue-400 rounded px-4 py-2 px-1 w-1/3 font-[500]'>
                             Send <p className='ml-1 hidden sm:flex'>Message</p></button>
                     </form>
                 </div>
