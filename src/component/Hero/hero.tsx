@@ -9,7 +9,7 @@ const Hero = () => {
   return <div className='flex flex-col lg:h-screen lg:flex-row px-5 sm:px-20 pt-20 lg:pt-2' id='Home' >
           <div className='flex-1 flex justify-center items-start flex-col mb-24'>
               <h3 className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 font-Manrope
-              text-xl'>Welcom!</h3>
+              text-xl'>Hello!</h3>
               <div className='flex flex-row justify-center items-cnter w-full mt-2'>
                 <p className='mr-2 sm:mr-4 flex-1/3 text-[14px] sm:text-2xl '>I am</p>
                 <p className='flex-1 relative text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 font-Manrope

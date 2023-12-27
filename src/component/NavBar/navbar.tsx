@@ -9,7 +9,7 @@ const Menu = ({menu}:any)=>(
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" onClick={menu}>
     <HashLink smooth to="/#about">About</HashLink></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" onClick={menu}>
-    <HashLink smooth to="/#projects">Projects</HashLink></p>
+    <HashLink smooth to="/projects#top">Projects</HashLink></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" onClick={menu}>
     <HashLink smooth to="/#technologies">Technologies</HashLink></p>
     <p className="text-white font-Manrope mx-4 my-1 text-base hover:text-gray-300" onClick={menu}>
